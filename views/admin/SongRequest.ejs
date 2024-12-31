@@ -1,0 +1,29 @@
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Song Title</th>
+                <th>Artist/Band</th>
+                <th>YouTube Link</th>
+                <th>Additional Notes</th>
+                <th>Actions</th> <!-- New column for actions -->
+            </tr>
+        </thead>
+        <tbody>
+            <% songRequests.forEach(function(songRequest) { %>
+                <tr>
+                    <td><%= songRequest.songtitle %></td>
+                    <td><%= songRequest.artistBand %></td>
+                    <td><a href="<%= songRequest.ytlink %>" target="_blank">YouTube Link</a></td>
+                    <td><%= songRequest.additional %></td>
+                    <td>
+                        <!-- Delete button -->
+                        <form action="/delete-song/<%= songRequest._id %>" method="POST" style="display:inline;">
+                            <button type="submit" class="btn-delete">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>

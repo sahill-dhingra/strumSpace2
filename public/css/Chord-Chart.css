@@ -1,0 +1,10 @@
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* background-color: aquamarine; */
+    border: 2px solid #0C4160;
+}
+
+

@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" href="/css/song-request.css">
+</head>
+
+<body>
+    <h1>Request your song</h1>
+    <div class="outer">
+        <form action="/song-request" method="POST">
+            <label for="songtitle"><b>Song Title</b></label>
+            <input type="text" placeholder="Enter song Name" name="songtitle">
+        
+            <label for="artist-band"><b>Artist/Band Name:</b></label>
+            <input type="text" placeholder="Enter Artist/Band Name" name="artist-band">
+        
+            <label for="ytlink"><b>Youtube link:</b></label>
+            <input type="text" placeholder="Enter Youtube Link" name="ytlink">
+        
+            <label for="additional"><b>Additional Notes/Requests</b></label>
+            <input type="text" placeholder="Enter Additional Notes/Requests" name="additional">
+        
+            <input type="submit" value="Submit" class="btn">
+        </form>
+        
+    </div>
+</body>
