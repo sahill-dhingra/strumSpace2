@@ -26,7 +26,7 @@ body {
 .bpm-display {
     width: 100%;
     text-align: center;
-    color: #0C4160;
+    color: #000;
     font-weight: bold;
 }
 .bpm-display .tempo {
@@ -55,7 +55,7 @@ body {
     margin: 20px;
 }
 .tempo-settings .adjust-tempo-btn:hover {
-    background: #0C4160;
+    background: #000;
     color: #fff;
 }
 .tempo-settings .decrease-tempo {
@@ -82,7 +82,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #0C4160;
+    background: #000;
     cursor: pointer;
     margin-top: -8px;
 }
@@ -91,7 +91,7 @@ input[type=range]::-moz-range-thumb {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #0C4160;
+    background: #000;
     cursor: pointer;
     border: none;
 }
@@ -113,7 +113,7 @@ input[type=range]::-moz-range-track {
     height: 50px;
     font-size: 0.7em;
     text-align: center;
-    background: #0C4160;
+    background: #000;
     border-radius: 50%;
     color: #fff;
     line-height: 50px;

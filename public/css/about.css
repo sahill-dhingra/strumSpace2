@@ -3,13 +3,13 @@
     justify-content: center;
     align-items: center;
 
-    border: 2px solid #0C4160;
+    /* border: 2px solid #0C4160; */
 
 }
 
 .features {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 40px 20px;
 }
 

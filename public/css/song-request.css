@@ -1,0 +1,9 @@
+.outer{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.outer > form{
+    width: 100%;
+}

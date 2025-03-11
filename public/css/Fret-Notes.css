@@ -17,28 +17,29 @@
 }
 */
 .body {
-    background: #C3CEDA;
+    /* background: #FFF; */
     border: 2px solid #071330;
     font-family: Lato, sans-serif;
+    margin: 20px;
 } 
 .settings {
     display: flex;
     color: #C3CEDA;
     padding: 20px;
     border-bottom: 1px solid #071330;
-    background: #071330;
+    background: #000;
 }
 
 select#instrument-selector{
     /* width: 60%; */
     color: #C3CEDA;
-    background-color: #0C4160;
+    background-color: #444444;
     border-radius: 10px;
 }
 
 input#number-of-frets{
     color: #C3CEDA;
-    background-color: #0C4160;
+    background-color: #444444;
     border-radius: 10px;
     /* height: 80%; */
 }
@@ -57,7 +58,7 @@ label {
     flex-direction: column;
     background: #be975b url(/img/wood-pattern.png);
     width: 80%;
-    min-width: 1400px;
+    min-width: 1470px;
     height: calc(var(--fretboard-height) * 1px);
     margin-top: 50px;
     overflow-x: auto; /* Allows horizontal scrolling if needed */
@@ -136,7 +137,7 @@ label {
 
 .note-name-section {
     width: 100%;
-    color: #0C4160;
+    /* color: #0C4160; */
     font-weight: 100;
     font-size: 2.5em;
     display: flex;
