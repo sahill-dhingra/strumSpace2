@@ -19,11 +19,32 @@ const adminLayout = '../views/layouts/admin';
  * 
  * Check Login
 */
+// const authMiddleware = (req, res, next) => {
+//     const token = req.cookies.token;
+
+//     if (!token) {
+//         return res.status(401).json({ message: 'Unauthorized' });
+//     }
+
+//     try {
+//         const decoded = jwt.verify(token, jwtSecret);
+//         req.userId = decoded.userId;
+//         next();
+//     } catch (error) {
+//         res.status(401).json({ message: 'Unauthorized' });
+//     }
+// }
+
+/**
+ * 
+ * Check Login
+*/
 const authMiddleware = (req, res, next) => {
     const token = req.cookies.token;
 
     if (!token) {
-        return res.status(401).json({ message: 'Unauthorized' });
+        // Render the Unauthorized page instead of sending JSON
+        return res.status(401).render('Unauthorized', { title: 'Unauthorized Access' });
     }
 
     try {
@@ -31,9 +52,10 @@ const authMiddleware = (req, res, next) => {
         req.userId = decoded.userId;
         next();
     } catch (error) {
-        res.status(401).json({ message: 'Unauthorized' });
+        // Render the Unauthorized page for invalid token
+        res.status(401).render('Unauthorized', { title: 'Unauthorized Access' });
     }
-}
+};
 
 
 /**

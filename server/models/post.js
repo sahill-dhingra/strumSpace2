@@ -7,7 +7,7 @@ const PostSchema = new Schema({
     createdAt: { type: Date, default: Date.now },
     updatedAt: { type: Date, default: Date.now },
     embed: { type: String, required: true },
-    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true } // New field
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: false } // New field
 });
 
 module.exports = mongoose.model('Post', PostSchema);
